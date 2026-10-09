@@ -1,0 +1,56 @@
+<!-- Recipe schematic template. Two rendering targets:
+     (a) Visualizer widget: paste only the <style> and <table> (no doctype/html/head/body),
+         keep the CSS variables so light/dark mode works.
+     (b) Standalone file: use the whole document; the :root block below supplies the variables.
+     Replace the table content; keep the class names. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Best chicken Parmesan</title>
+<style>
+:root{--text-primary:#1a1a1a;--text-secondary:#5f5e5a;--border-strong:#2e7d32;--surface-0:#f1efe8;--surface-2:#ffffff;}
+@media (prefers-color-scheme: dark){:root{--text-primary:#ececec;--text-secondary:#b4b2a9;--border-strong:#66bb6a;--surface-0:#2c2c2a;--surface-2:#1c1c1b;}}
+body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--surface-2);margin:1.5rem;}
+h1{font-size:18px;font-weight:500;color:var(--text-primary);margin:0 0 .75rem}
+.rt{border-collapse:collapse;width:100%;font-size:13px;line-height:1.35;color:var(--text-primary)}
+.rt td{border:1px solid var(--border-strong);padding:5px 8px;vertical-align:middle}
+.rt td.i{text-align:left;width:46%}
+.rt td.o{text-align:center}
+.rt td.h{text-align:center;font-weight:500}
+.rt td.s{background:var(--surface-0);color:var(--text-secondary);font-size:12px;text-align:left;font-weight:500}
+@media print{body{margin:0}.rt{font-size:11px}}
+</style>
+</head>
+<body>
+<h1>Best chicken Parmesan (America's Test Kitchen) — serves 4</h1>
+<table class="rt">
+<tr><td class="h" colspan="7">Adjust oven rack 4 in from broiler element; heat broiler</td></tr>
+<tr><td class="s" colspan="7">Sauce (medium saucepan)</td></tr>
+<tr><td class="i">1 Tbs (15 mL) extra-virgin olive oil</td><td class="o">heat until shimmering</td><td class="o" rowspan="5">cook 30 s until fragrant</td><td class="o" rowspan="7">simmer 20 min until thick</td><td class="o" rowspan="9">off heat, stir in; keep warm</td><td class="o" rowspan="9"></td><td class="o" rowspan="23">plate and serve immediately</td></tr>
+<tr><td class="i">2 garlic cloves, minced</td><td class="o"></td></tr>
+<tr><td class="i">¾ tsp (4 g) kosher salt</td><td class="o"></td></tr>
+<tr><td class="i">¼ tsp dried oregano</td><td class="o"></td></tr>
+<tr><td class="i">pinch red pepper flakes</td><td class="o"></td></tr>
+<tr><td class="i">1 can (28 oz; 794 g) crushed tomatoes</td><td class="o" colspan="2"></td></tr>
+<tr><td class="i">¼ tsp (1 g) sugar</td><td class="o" colspan="2"></td></tr>
+<tr><td class="i">2 Tbs coarsely chopped fresh basil</td><td class="o" colspan="3"></td></tr>
+<tr><td class="i">1 Tbs (15 mL) extra-virgin olive oil</td><td class="o" colspan="3"></td></tr>
+<tr><td class="s" colspan="6">Chicken (10-in nonstick skillet, then rimmed baking sheet)</td></tr>
+<tr><td class="i">2 (6–8 oz; 170–225 g) boneless skinless chicken breasts, halved horizontally, pounded ½ in thick</td><td class="o" rowspan="2">salt ⅛ tsp per side; rest 20 min</td><td class="o" rowspan="9">pat dry; dredge in egg, then crumbs</td><td class="o" rowspan="10">fry 2 at a time, 1½–2 min per side</td><td class="o" rowspan="12">top with cheese; broil 2–4 min</td><td class="o" rowspan="13">2 Tbs sauce per cutlet; pass remaining</td></tr>
+<tr><td class="i">1 tsp (6 g) kosher salt</td></tr>
+<tr><td class="i">1 large (50 g) egg</td><td class="o" rowspan="2">whisk until smooth</td></tr>
+<tr><td class="i">1 Tbs (8 g) all-purpose flour</td></tr>
+<tr><td class="i">1½ oz (45 g; ¾ cup) Parmesan, grated</td><td class="o" rowspan="5">combine</td></tr>
+<tr><td class="i">½ cup (30 g) panko bread crumbs</td></tr>
+<tr><td class="i">½ tsp garlic powder</td></tr>
+<tr><td class="i">¼ tsp dried oregano</td></tr>
+<tr><td class="i">¼ tsp pepper</td></tr>
+<tr><td class="i">⅓ cup (80 mL) vegetable oil</td><td class="o" colspan="2"></td></tr>
+<tr><td class="i">2 oz (55 g; ½ cup) whole-milk mozzarella, shredded</td><td class="o" rowspan="2">combine</td><td class="o" rowspan="2" colspan="2"></td></tr>
+<tr><td class="i">2 oz (55 g; ½ cup) fontina, shredded</td></tr>
+<tr><td class="i">¼ cup torn fresh basil</td><td class="o" colspan="4"></td></tr>
+</table>
+</body>
+</html>
